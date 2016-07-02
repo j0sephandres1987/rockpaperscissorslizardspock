@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        /*background: #e74c3c;*/
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .icon-option-name {
+        font-size: 20px !important;
+        color: #e74c3c;
+      }
+
+      .icon-option {
+        font-size: 60px !important;
+        color: #e74c3c;
+        border-radius: 100px;
+        border: 6px solid #e74c3c;
+        padding: 20px;
+        cursor: pointer;
+      }
+
+      .icon-option:hover {
+        font-size: 68px !important;
+        color: #f1c40f;
+        border-radius: 100px;
+        border: 6px solid #f1c40f;
+      }
+
+      .icon-option-selected {
+        font-size: 68px !important;
+        color: #f1c40f;
+        border-radius: 100px;
+        border: 6px solid #f1c40f;
+        cursor: pointer;
+        padding: 20px;
+      }
+
+      .pc-icon {
+        font-size: 60px !important;
+        color: #2c3e50;
+        border-radius: 100px;
+        border: 8px solid #2c3e50;
+        padding: 24px;
+      }
+
+      .pc-name {
+        font-weight: 700;
+        font-size: 50px;
+        color: #2c3e50;
+      }
+
+      img {
+        width: 44%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="http://bwilson.cs.georgefox.edu/CSIS_202/programs/rpsls_rules2.jpg" alt="">
+    <ul>
+      <li class="icon-option-container"><i class="pc-icon fa fa-hdd-o" aria-hidden="true"></i></li>
+      <li><p class="pc-name">PC</p></li>
+    </ul>
+    <ul>
+      <li><i data-option="rock" class="icon-option fa fa-hand-rock-o" aria-hidden="true"></i><p class="icon-option-name"><span>Rock</span></p></li>
+      <li><i data-option="paper" class="icon-option fa fa-hand-paper-o" aria-hidden="true"></i><p class="icon-option-name"><span>Paper</span></p></li>
+      <li><i data-option="scissors" class="icon-option fa fa-hand-scissors-o" aria-hidden="true"></i><p class="icon-option-name"><span>Scissors</span></p></li>
+      <li><i data-option="lizard" class="icon-option fa fa-hand-lizard-o" aria-hidden="true"></i><p class="icon-option-name"><span>Lizard</span></p></li>
+      <li><i data-option="spock" class="icon-option fa fa-hand-spock-o" aria-hidden="true"></i><p class="icon-option-name"><span>Spock</span></p></li>
+    </ul>
+    <script src="game.js"></script>
+  </body>
+</html>
