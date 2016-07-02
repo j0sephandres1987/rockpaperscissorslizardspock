@@ -83,8 +83,8 @@ $(document).ready(function() {
   }
 
   $(".icon-option").click(function() {
-    $("i").removeClass("icon-option-selected").addClass("icon-option");
-    $(this).removeClass("icon-option").addClass("icon-option-selected");
+    $(".icon-option").removeClass("icon-option-selected");
+    $(this).addClass("icon-option-selected");
     getRandomPcOption(this);
   });
 });
